@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>New Page</title>
+        <style>
+            #t{color: purple;
+            font-size: 60px;}
+        #a{color: red;}
+        #b{color: blue;}
+        #c{color: green;}
+        .para{font-size: 50px;}
+        </style>
+    </head>
+    <h1 id="t">First document page</h1>
+    <body>
+        <p id="a" class="para">this is first paragraph</p>
+        <p id="b" class="para">this is second paragraph</p>
+        <p id="c" class="para">this is third paragraph</p>
+        <button onclick="changetext()">refresh</button>
+        <script>
+            function changetext()
+            {
+                document.getElementById("a").innerHTML=document.getElementById("b").innerText;
+                document.getElementById("b").innerHTML=document.getElementById("c").innerText;
+                document.getElementById("c").innerHTML=document.getElementById("t").innerText;
+            }
+        </script>
+    </body>
+</html>
